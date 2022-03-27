@@ -67,7 +67,7 @@ Users should be able to:
 
 
 ### What I have learned
- Differences between Chrome and Firefox requesting the same endpoint multiple times using the axios library.
+ Differences between Chrome and Firefox requesting the same endpoint multiple times, using the axios library.
 
 
 >When clicking on the dice button, the user should see a new advice every time,  if the button is clicked at least two seconds after the previous request, differently the API will give the same advice: it is a built-in feature of the API itself, so a random double click won't reload another advice too soon, avoiding a bad user experience.
