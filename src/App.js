@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {useEffect, useState} from 'react';
+import getSentence from './api/api';
+import SentenceCard from './components/SentenceCard';
+
 
 function App() {
+  
+  const [advice, setAdvice] = useState({advice: "default sentence", id: "0"});
+  
+  const getNewSentence = async () =>{
+    const {advice, id} =  await getSentence();
+    setAdvice({advice, id})
+  }
+
+  useEffect(()=>{
+    getNewSentence();
+  },[])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SentenceCard advice={advice} onClick={getNewSentence}/>
     </div>
   );
 }

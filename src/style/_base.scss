@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height:100%;
+  width: 100%;
+
+ @media only screen and (min-width: 50em) {
+     align-items: center;
+  }
+
+ }

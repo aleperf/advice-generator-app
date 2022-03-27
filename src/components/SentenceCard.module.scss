@@ -1,0 +1,96 @@
+@use '../style/index.scss' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+.card {
+   background-color: $card-color;
+   border-radius:10px;
+   font-family: 'Manrope', sans-serif;
+   font-size:2.2rem;
+   font-weight: 800;
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   margin: 10rem auto 0 auto;
+   text-align: center;
+   width: 90vw;
+   max-width:35rem ;
+   padding: 4rem 1rem;
+   
+
+
+   @media only screen and (min-width: 50em) {
+      font-size:2.8rem;
+      min-width: 50rem;
+    
+   }
+ 
+
+   &__id {
+      color: $accent-color;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+
+      @media only screen and (min-width: 50em) {
+         font-size:1.4rem;
+        
+       }
+   }
+
+   blockquote{
+      padding: 2rem;
+      margin-bottom: 2rem;
+
+      
+
+      &::before{
+         content: "“";
+      }
+
+      &::after{
+         content:"”" 
+      }
+
+     
+   }
+
+    &__divider {
+         width: 100%;
+         height: 16px;
+         margin-bottom: 2rem;
+         background-repeat: no-repeat;
+         background-image: url("../images/pattern-divider-mobile.svg");
+         background-position: center center;
+
+         @media only screen and (min-width: 50em) {
+            background-image: url("../images/pattern-divider-desktop.svg");
+         }
+      }
+
+
+
+  &__button{
+     margin-top: 4rem;
+     height: 60px;
+     width: 60px;
+     border-radius: 50%;
+     border: none;
+     position: absolute;
+     bottom: 0;
+     transform: translateY(50%);
+     background: $accent-color url(../images/icon-dice.svg) no-repeat;
+     background-position: center center;
+
+     &:hover,&:active {
+         box-shadow: 0 0 10px $accent-color;
+         cursor: pointer;
+     }
+
+  }
+}
