@@ -20,7 +20,6 @@ const getSentence = async (sentenceId='', axiosInstance=apiQuery) => {
     t: new Date().getTime()
   }});
    const  {advice, id} = response.data.slip;
-   console.log("click", advice, id)
    return {advice, id};
     
   } catch(error) {
