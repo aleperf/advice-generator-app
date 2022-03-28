@@ -26,6 +26,14 @@
       min-width: 50rem;
     
    }
+
+   @media only screen and (max-height: 25em) {
+      margin: 2rem auto 0 auto;
+
+     }
+
+ 
+
  
 
    &__id {

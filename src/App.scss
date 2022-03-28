@@ -1,1 +1,26 @@
 @use './style/index.scss' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+
+.attribution {
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: $text-color;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+
+
+
+
+    a {
+        color: $accent-color;
+
+        &:visited {
+            color:$visited-link-color;
+        }
+      }
+
+
+
+}
