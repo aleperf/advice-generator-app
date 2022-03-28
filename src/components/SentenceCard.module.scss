@@ -5,7 +5,7 @@
 .card {
    background-color: $card-color;
    border-radius:10px;
-   font-family: 'Manrope', sans-serif;
+   font-family: $text-font;
    font-size:2.2rem;
    font-weight: 800;
    display: flex;

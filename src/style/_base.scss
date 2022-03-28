@@ -1,5 +1,6 @@
 @use 'variables' as *;
 
+
 *,
 *::before,
 *::after {
@@ -36,5 +37,24 @@ body {
    
   
    }
+
+   
+.attribution {
+  margin-top: 8rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: $text-color;
+  font-size: 1.1rem;
+  font-family: $footer-font;
+
+  a {
+      color: $accent-color;
+
+      &:visited {
+          color:$visited-link-color;
+      }
+    }
+
+}
 
  }
