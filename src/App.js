@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div>
-      <SentenceCard advice={advice} onClick={getNewSentence}/>
+      <SentenceCard advice={advice} onClickButton={getNewSentence}/>
       <footer className="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">
     Frontend Mentor </a>. 

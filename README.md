@@ -93,6 +93,8 @@ const response = await axiosInstance.get(sentenceId, { params: {
 
 - [Using JavaScript Axios/Fetch. Can you disable browser cache?](https://stackoverflow.com/questions/49263559/using-javascript-axios-fetch-can-you-disable-browser-cache) - A useful Stack Overflow post on how to solve the problem of caching, when requesting the same endpoint on Firefox.
 
+- [React - fade in on add, fade out on remove item](https://stackoverflow.com/questions/61827640/react-fade-in-on-add-fade-out-on-remove-item) - Another useful Stack Overflow post on how to add a simple fade in animation using only CSS in React.
+
 
 ## Author
 

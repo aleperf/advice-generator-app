@@ -2,6 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
 
+.fadein{
+   animation: fadeIn 800ms ease-in-out;
+}
+
+@keyframes fadeIn {
+   0% {opacity:0;}
+   100% {opacity:1;}
+ }
+
 .card {
    background-color: $card-color;
    border-radius:10px;
@@ -40,10 +49,6 @@
 
      }
 
- 
-
- 
-
    &__id {
       color: $accent-color;
       font-size: 1.2rem;
@@ -60,15 +65,18 @@
    }
 
    blockquote{
+      
       padding: 2rem;
       margin-bottom: 2rem;
-      min-height: 14rem;
+      min-height: 16rem;
       display:flex;
       align-items: center;
       justify-content: center;
+      opacity: 1;
 
-   
-   }
+
+}
+
 
     &__divider {
          width: 100%;
