@@ -18,6 +18,14 @@
    width: 90vw;
    max-width:35rem ;
    padding: 4rem 1rem;
+
+   &:focus, &:active{
+      outline: none;
+   }
+
+   input:focus{
+      outline: none;
+   }
    
 
 
@@ -54,18 +62,12 @@
    blockquote{
       padding: 2rem;
       margin-bottom: 2rem;
+      min-height: 14rem;
+      display:flex;
+      align-items: center;
+      justify-content: center;
 
-      
-
-      &::before{
-         content: "“";
-      }
-
-      &::after{
-         content:"”" 
-      }
-
-     
+   
    }
 
     &__divider {
